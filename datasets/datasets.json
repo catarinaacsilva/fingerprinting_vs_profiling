@@ -1,0 +1,66 @@
+{
+    "datasets": [
+        {
+            "name": "The Adult Dataset",
+            "path": "datasets/adult.csv",
+            "feature columns": [
+                "sex",
+                "age",
+                "race",
+                "marital-status",
+                "education",
+                "native-country",
+                "workclass",
+                "occupation"
+            ],
+            "categorical": [
+                "sex",
+                "race",
+                "marital-status",
+                "education",
+                "native-country",
+                "workclass",
+                "occupation",
+                "salary-class"
+            ],
+            "sensitive column": "salary-class"
+        },
+        {
+            "name": "California Housing Prices",
+            "path": "datasets/cahousing.csv",
+            "feature columns": [
+                "longitude",
+                "latitude",
+                "housing_median_age",
+                "median_income",
+                "median_house_value"
+            ],
+            "categorical": [],
+            "sensitive column": "ocean_proximity"
+        },
+        {
+            "name": "Contraceptive Method Choice",
+            "path": "datasets/cmc.csv",
+            "feature columns": [
+                "age",
+                "Weducation",
+                "children"
+            ],
+            "categorical": ["Weducation"],
+            "sensitive column": "method"
+        },
+        {
+            "name": "The Mammographic Mass",
+            "path": "datasets/mgm.csv",
+            "feature columns": [
+                "bi_rads_assessment",
+                "age",
+                "shape",
+                "margin",
+                "density"
+            ],
+            "categorical": ["bi_rads_assessment", "shape", "margin", "density"],
+            "sensitive column": "severity"
+        }
+    ]
+}
